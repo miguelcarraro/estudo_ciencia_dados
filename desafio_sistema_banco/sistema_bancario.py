@@ -54,7 +54,8 @@ while True:
     elif opcao == "e":
         if not extrato:
            print("Não foram feitas nenhuma transação nos ultimos dias")
-        else:  
+        else:
+            print("EXTRATO:\n")  
             print(extrato)
             print(f"Saldo: R${saldo:.2f}")   
 
