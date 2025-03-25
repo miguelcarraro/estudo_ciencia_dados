@@ -1,5 +1,3 @@
-# **Aula 1.**
-
 # SGBD.
 
 ## Apresentação Inicial.
@@ -47,7 +45,7 @@ Já dentro de um SGBD (Sistema de Gerenciamento de Banco de Dados)
 Coerência.
 Propósito.
 
-### O que são SGBDs
+### O que são SGBDs?
 '''
     Definição:
 
@@ -83,7 +81,7 @@ São protegidos por dois níveis, um voltado ao mal funcionamento e o outro de a
     Na parte de acesso posso restringir o acesso de determinados grupos a determinadas informações.
 '''
 
-### Histórico de SGBDs
+### Histórico de SGBDs.
 
 A idéia de criação de um gerenciamento de banco de dados surgiu em 1960.
 Já o modelo relacional surgiu em 1970 pela IBM.
@@ -101,15 +99,47 @@ Também em 83 a Oracle lançou o Oracle 3.
 
 A partir dos anos 2000, com a entrada gigantesta de dados começou-se ser necessário um armazenamento mais robusto que nem sempre comportava o modelo relacional e ai nasceram os bancos **NoSQL**
 
-#### Modelo Hierárquico
+#### Modelo Hierárquico.
 
 É um sistema de gerenciamento voltado para a informação
 Lembra um modelo de registo em arvore, onde temos um nó pai, nós filhos e folhas
 
 Caso eu queira acessar uma informação especifica tenho que correr por todos os nós até localizar a informação, o que gerava custo computacional maior.
 
-#### Modelo em Rede
+#### Modelo em Rede.
 
 É um modelo mais complexo que utiliza links como se fosse um grafo, o principal problema é que a pessoa que utiliza ele precisa saber da estrutura do grafo para que você saiba qual é a origem da ligação "N:M"
 
-#### Modelo Relacional (em construção...)
+#### Modelo Relacional.
+
+Baseado em Álgebra relacional
+
+O modelo relacional normalmente tem um DBA que é o administrador do banco de dados
+O DBA vai definir as tabelas e constrains para os dados e os comandos usados por ele sao traduzidos pelo processador LDD ( Linguagem de Definição de Dados.)
+
+Como o LDD vai ser entendido pelo banco de dados:
+'''
+    É necessária que seja feita uma tradução das querys SQL para linguagem de máquina
+    Após esse processo vira um gerenciador que ira tratar a demanda e direcionar corretamente a extração daqueles dados, acessando os metadados para conhecer a estrutura e retornar a informação.
+'''
+
+Para o uso do modelo relacional também existe o usuário comum vai usar uma linguagem diferente para se comunicar com o banco de dados, ele usará uma LMD  (Linguagem de Definição de Dados)
+Aqui a intenção principal é a de alterar e extrair informações, e essas informações normalmente são duráveis.
+
+### SGBDs mais utilizados no mercado.
+
+1- Oracle
+    O pioneiro, projetado para fornecer performance, para trabalhar em grid muito usado por grandes corporações.
+
+2- MySQL
+    Também mantido pela Oracle, um SGBD leve e Open Source, muito versátil.
+
+3- SQLServer
+    Mantido pela Microsoft, um pouco mais sofisticado, com ferramentas de integração com BI.
+
+4- PostgreSQL
+    Considerado um exemplo em especificação, normalmente é um banco muito utilizado em conjunto com por exemplo python, também é open source.
+
+5- mongoDB.
+    Um SGBD NoSQL, orientado a documentos, armazena dados em bloco.
+
